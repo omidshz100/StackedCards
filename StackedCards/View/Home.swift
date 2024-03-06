@@ -4,7 +4,7 @@
 //
 //  Created by Omid Shojaeian Zanjani on 06/03/24.
 //
-
+// https://www.youtube.com/watch?v=NgYyN2YyDd4
 import SwiftUI
 
 struct Home: View {
@@ -50,6 +50,14 @@ struct Home: View {
         let minX = proxy.frame(in: .scrollView(axis: .horizontal)).minX
         print("item Num: \(num) - \(minX)")
         return minX < 0 ? 0:-minX
+    }
+    
+    // progress
+    func progress(_ proxy: GeometryProxy, index:Int) -> CGFloat{
+        let maxX = proxy.frame(in: .scrollView(axis: .horizontal)).maxX
+        let width = proxy.bounds(of: .scrollView(axis: .horizontal))?.width ?? 0
+        // let's make progress
+        let progress = maxX / width
     }
 }
 
