@@ -11,6 +11,8 @@
 		D91EE9C62B989FCF0062971B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EE9C52B989FCF0062971B /* ContentView.swift */; };
 		D91EE9C82B989FD00062971B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91EE9C72B989FD00062971B /* Assets.xcassets */; };
 		D91EE9CB2B989FD00062971B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91EE9CA2B989FD00062971B /* Preview Assets.xcassets */; };
+		D91EE9D42B98A0480062971B /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EE9D32B98A0480062971B /* Home.swift */; };
+		D91EE9D62B98A1D20062971B /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91EE9D52B98A1D20062971B /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		D91EE9C52B989FCF0062971B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D91EE9C72B989FD00062971B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D91EE9CA2B989FD00062971B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D91EE9D32B98A0480062971B /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		D91EE9D52B98A1D20062971B /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		D91EE9C22B989FCF0062971B /* StackedCards */ = {
 			isa = PBXGroup;
 			children = (
+				D91EE9D22B98A0320062971B /* Model */,
+				D91EE9D12B98A02A0062971B /* View */,
 				D91EE9C32B989FCF0062971B /* StackedCardsApp.swift */,
 				D91EE9C52B989FCF0062971B /* ContentView.swift */,
 				D91EE9C72B989FD00062971B /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				D91EE9CA2B989FD00062971B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D91EE9D12B98A02A0062971B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D91EE9D32B98A0480062971B /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D91EE9D22B98A0320062971B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D91EE9D52B98A1D20062971B /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91EE9D62B98A1D20062971B /* Item.swift in Sources */,
 				D91EE9C62B989FCF0062971B /* ContentView.swift in Sources */,
 				D91EE9C42B989FCF0062971B /* StackedCardsApp.swift in Sources */,
+				D91EE9D42B98A0480062971B /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
